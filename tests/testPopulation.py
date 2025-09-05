@@ -6,10 +6,10 @@ import unittest
 
 # get parent directory name to import module to be tested
 parentdir = os.path.abspath(os.pardir)
-sys.path.append(parentdir)
+#sys.path.append(parentdir)
 
-# import the module to be tested
-from population import Population
+# Import from installed/checked-out package
+from pserpoppy.population import Population
 
 
 # not sure yet that population needs much testing... it's so simple

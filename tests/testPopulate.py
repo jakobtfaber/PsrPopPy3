@@ -8,10 +8,10 @@ import unittest
 
 # get parent directory name to import module to be tested
 parentdir = os.path.abspath(os.pardir)
-sys.path.append(parentdir)
+#sys.path.append(parentdir)
 
-# import the module to be tested
-from populate import generate
+# Import from installed/checked-out package
+from psrpoppy.populate import generate
 
 class testPopulate(unittest.TestCase):
     def setUp(self):
